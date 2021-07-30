@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Learn HTML | Agira schools | Agira technologies</title>
+	
+	<script src="jquery/jquery.mins.js"></script>
+	<script src="jquery/jquery-ui/jquery-ui.js"></script>
+	<link href="jquery/jquery-ui/jquery-ui.css" rel="stylesheet">
+
+
+	
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="/resources/demos/style.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	
+	
+	
+	<style>
+	
+	.jumbotron{
+	height:200px;
+	background-color:#555157;
+	margin-top:15px
+	
+	}
+	.logo1{
+	height:150px;
+	width:150px;
+	position:absolute;
+	top:100px;
+	margin-left:100px
+	}
+	.nav-item{
+	margin-right:20px;
+	transition: transform .500ms;
+	}
+	.nav-item:hover{
+	 transform: scale(1.03);
+	}
+	.secondarynav{
+	margin:15px auto;
+	width:70%;
+	height:50px;
+	cursor:pointer
+	}
+	.secnavitem{
+	background-color:#555157;
+	min-width:133px;
+	font-style:oblique;
+	font-size:18px
+	}
+	.secnavitem:hover{
+	border: solid 2px #DAAF1D;
+	}
+	.navtext{
+	position:relative;
+	top:10px
+	}
+	.subtopics{
+	margin-top:40px;
+	background-color:#555157;
+	width:15%;
+	height:550px;
+	overflow-y:scroll;
+	font-style:oblique
+	}
+	.board{
+	margin-top:40px;
+	width:40%;
+	height:550px;
+	border:solid 1px #555157;
+	overflow-y:scroll
+	}
+	.output{
+	margin-top:40px;
+	width:40%;
+	height:550px;
+	border:solid 1px #555157
+	}
+	.notepad{
+	margin-top:40px;
+	width:45%;
+	height:550px;
+	border:solid 1px #555157;
+	overflow:hidden
+	}
+	.outputarea{
+	margin-top:40px;
+	width:45%;
+	height:550px;
+	border:solid 1px #555157
+	}
+	.endsection{
+	height:90px;
+	background-color:#555157;
+	margin-top:40px
+	}
+	.tabitem{
+	background-color:#555157;
+	margin-right:3px;
+	width:100px;
+	cursor:pointer
+	}
+	.active{
+	display:block;
+	
+	}
+	.inactive{
+	display:none;
+	}
+	.activebtn{
+	border: solid 2px #DAAF1D;
+	}
+	.inactivebtn{
+	border: none
+	}
+	.coursenav{
+	border-bottom:solid 1px white;
+	padding-bottom:10px;
+	
+	}
+	.coursenav p{
+	position:relative;
+	top:10px
+	
+	}
+	.coursenav:hover{
+	background-color:#DAAF1D;
+	cursor:pointer
+	}
+	.steps{
+	height:200px;
+	width:85%;
+	margin-top:20px
+	}
+	.board p{
+	position:relative;
+	top:10px
+	}
+	</style>
+	
+  </head>
+  <body>
+    
+	 <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#555157;">
+  <a class="navbar-brand" href="#"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav mx-auto">
+      <a class="nav-item nav-link active text-white" href="#" onclick="location.assign('https://www.agiratechnologies.co.ke');">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link active text-white" href="#" onclick="location.assign('https://www.agiratechnologies.co.ke/webpricing/webpricing.html');">Web Packages</a>
+	  <a class="nav-item nav-link active text-white" href="#" onclick="location.assign('https://www.agiratechnologies.co.ke/agiraschools/agiraschools.html');">Agira Schools</a>
+	  <a class="nav-item nav-link active text-white" href="#" onclick="location.assign('https://www.agiratechnologies.co.ke/webhosting/webhosting.html');">Web Hosting</a>
+     
+      <a class="nav-item nav-link active text-white" href="#" onclick="location.assign('https://www.agiratechnologies.co.ke/contactus/contactus.html');">contact us</a>
+	  
+    </div>
+  </div>
+</nav>
+
+	
+	<div class="jumbotron jumbotron-fluid ">
+ <img src="agiratechlogo.jpg" class="logo1" onclick="location.assign('https://www.agiratechnologies.co.ke');">
+  <div class="container text-center text-white" style="position:relative;bottom:25px">
+ 
+    <h1 class="display-4" style="font-size:50px;font-family:cursive;">HTML Entities</h1>
+    <p class="lead" style="font-size:25px;font-family:cursive">Web design simplified</p>
+	
+  </div>
+
+</div>
+   
+
+<div class="secondarynav text-white d-flex flex-row justify-content-between">
+<div class="secnavitem text-center" style="border: solid 2px #DAAF1D;" onclick="location.assign('https://www.agiratechnologies.co.ke/agiraschools/htmlcourse/htmlcourse.html');"><p class="navtext">HTML</p></div>
+<div class="secnavitem text-center"><p class="navtext">CSS</p></div>
+<div class="secnavitem text-center"><p class="navtext">Bootstrap</p></div>
+<div class="secnavitem text-center"><p class="navtext">Javascript</p></div>
+<div class="secnavitem text-center"><p class="navtext">jQuery</p></div>
+<div class="secnavitem text-center"><p class="navtext">PHP</p></div>
+<div class="secnavitem text-center"><p class="navtext">mySQL</p></div>
+</div>
+
+<div class="d-flex flex-row justify-content-between">
+
+<div class="subtopics text-white text-center" id="subtopicsid">
+
+<div class="coursenav" onclick="location.assign('https://www.agiratechnologies.co.ke/agiraschools/htmlcourse/htmlcourse.html');"><p>Introduction to HTML</p></div>
+<div class="coursenav" onclick="location.assign('https://www.agiratechnologies.co.ke/agiraschools/htmlcourse/structureofawebpage/structureofawebpage.html');"><p>Structure of a webpage</p></div>
+<div class="coursenav" onclick="location.assign('https://www.agiratechnologies.co.ke/agiraschools/htmlcourse/htmlheaders/htmlheaders.html');"><p>Headings</p></div>
+<div class="coursenav" onclick="location.assign('https://www.agiratechnologies.co.ke/agiraschools/htmlcourse/htmlparagraphs/htmlparagraphs.html');"><p>Paragraphs</p></div>
+<div class="coursenav" onclick="location.assign('https://www.agiratechnologies.co.ke/agiraschools/htmlcourse/htmllists/htmllists.html');"><p>Lists</p></div>
+<div class="coursenav" onclick="location.assign('https://www.agiratechnologies.co.ke/agiraschools/htmlcourse/textformatting/textformatting.html');"><p>Text Formatting</p></div>
+<div class="coursenav" onclick="location.assign('https://www.agiratechnologies.co.ke/agiraschools/htmlcourse/htmltables/htmltables.html');"><p>Tables</p></div>
+<div class="coursenav" onclick="location.assign('https://www.agiratechnologies.co.ke/agiraschools/htmlcourse/htmlforms/htmlforms.html');"><p>Forms</p></div>
+<div class="coursenav" onclick="location.assign('https://www.agiratechnologies.co.ke/agiraschools/htmlcourse/htmlimages/htmlimages.html');"><p>Images</p></div>
+<div class="coursenav" onclick="location.assign('https://www.agiratechnologies.co.ke/agiraschools/htmlcourse/htmlaudio/htmlaudio.html');"><p>Audio</p></div>
+<div class="coursenav" onclick="location.assign('https://www.agiratechnologies.co.ke/agiraschools/htmlcourse/htmlvideo/htmlvideo.html');"><p>Video</p></div>
+<div class="coursenav" onclick="location.assign('https://www.agiratechnologies.co.ke/agiraschools/htmlcourse/htmliframes/htmliframes.html');"><p>Iframes</p></div>
+<div class="coursenav" onclick="location.assign('https://www.agiratechnologies.co.ke/agiraschools/htmlcourse/htmllinks/htmllinks.html');"><p>Links</p></div>
+<div class="coursenav" onclick="location.assign('https://www.agiratechnologies.co.ke/agiraschools/htmlcourse/htmlclassesandids/htmlclassesandids.html');"><p>Classes and Id's</p></div>
+<div class="coursenav" style="background-color:#DAAF1D"><p>Entities</p></div>
+<div class="coursenav" onclick="location.assign('https://www.agiratechnologies.co.ke/agiraschools/htmlcourse/htmlcomments/htmlcomments.html');"><p>Comments</p></div>
+
+</div>    
+	
+
+<div class="board">
+<h2 class="text-center" style="font-style:oblique;color:#555157;">Lecture</h2>
+<div style="background-color:#E9ECEF;height:100px;margin-bottom:20px">
+<h6 class="text-center" style="position:relative;top:10px">Study guide</h6>
+<ul style="position:relative;top:5px">
+<li>What are HTML entities?</li>
+<li>Common entities in HTML</li>
+
+
+
+</ul>
+ </div>
+ 
+ 
+ <div class="text-center container" style="background-color:#E9ECEF;height:140px;margin-bottom:20px">
+ <p>HTML entities are used to display reserved characters eg &lt; and &gt; , entities start with a &amp sign</p>
+ <textarea readonly style="resize:none;width:90%;height:40px;overflow:hidden;border-left:solid 5px #555157;margin-top:10px">
+	<p>The less than sign &lt; is represented by &amp;lt;</p>
+ </textarea>
+ </div>
+ 
+ <div class="text-center container" style="background-color:#E9ECEF;height:230px;margin-bottom:20px">
+ <p>Some common entities are &lt; which is represented by &amp;lt;, &gt; is represented by &amp;gt; , &copy; is represented by
+&amp;copy; , you can check more entities on <a href="https://www.freeformatter.com/html-entities.html" target="_blank">Free formatter website</a> </p>
+ <textarea readonly style="resize:none;width:90%;height:110px;overflow:hidden;border-left:solid 5px #555157;margin-top:10px">
+	<p>The less than sign &lt; is represented by &amp;lt;</p>
+	<p>The greater than sign &gt; is represented by &amp;gt;</p>
+	<p>The copyright symbol &copy; is represented by &amp;copy;</p>
+ </textarea>
+ </div>
+ 
+ 
+ <div class="text-center container" style="background-color:#E9ECEF;height:410px;margin-top:20px">
+ <h3>All the above in one code, the Output is displayed on the right &#8658;</h3>
+ 
+ <textarea readonly style="resize:none;width:90%;height:290px;overflow:hidden;border-left:solid 5px #555157">
+<html>
+	<body>
+	
+		<p>The less than sign &lt; is represented by &amp;lt;</p>
+		<p>The greater than sign &gt; is represented by &amp;gt;</p>
+		<p>The copyright symbol &copy; is represented by &amp;copy;</p>
+	</body>
+</html>
+
+</textarea>
+	<h6>You can try the code yourself in the editor below</h6>
+ </div>
+ 
+</div>
+
+
+<div class="output">
+<h2 class="text-center" style="font-style:oblique;color:#555157">Final output</h2>
+<html>
+	<body>
+	
+		<p>The less than sign &lt; is represented by &amp;lt;</p>
+		<p>The greater than sign &gt; is represented by &amp;gt;</p>
+		<p>The copyright symbol &copy; is represented by &amp;copy;</p>
+		<p>For more entities visit <a href="https://www.freeformatter.com/html-entities.html" target="_blank">Free formatter website</a></p>
+	</body>
+</html>
+		
+</div>
+
+</div>	
+
+
+<h2 class="text-center" style="font-style:oblique;color:#555157;margin-top:40px">Try out the code</h2>
+<div class="codeplayer d-flex flex-row justify-content-around">
+
+<div class="notepad">
+<div class="d-flex flex-row text-white justify-content-center" style="margin-top:15px">
+<div class="tabitem text-center activebtn" id="htmlbutton">HTML</div>
+<div class="tabitem text-center" id="cssbutton">CSS</div>
+<div class="tabitem text-center" id="javascriptbutton">Javascript</div>
+</div>
+
+    <textarea class="active" id="htmltext" placeholder="HTML area" spellcheck="false" style="resize: none;width:100%;height:90%;margin-top:15px;border-bottom: none;border-right: none;border-left: none;font-style:oblique">
+
+<html>
+	<body>
+	
+		<p>The less than sign &lt; is represented by &ampamp;lt;</p>
+		<p>The greater than sign &gt; is represented by &ampamp;gt;</p>
+		<p>The copyright symbol &copy; is represented by &ampamp;copy;</p>
+		<p>For more entities visit <a href="https://www.freeformatter.com/html-entities.html" target="_blank">Free formatter website</a></p>
+	</body>
+</html>
+
+	</textarea>
+	<textarea class="inactive" id="csstext" placeholder="CSS area" spellcheck="false" style="resize: none;width:100%;height:90%;margin-top:15px;border-bottom: none;border-right: none;border-left: none;font-style:oblique"></textarea>
+	<textarea class="inactive" id="javascripttext" placeholder="Javascript area" spellcheck="false" style="resize: none;width:100%;height:90%;margin-top:15px;border-bottom: none;border-right: none;border-left: none;font-style:oblique"></textarea>
+
+
+</div>
+
+
+<div class="outputarea">
+<iframe id="outputframe" style="height:100%;width:100%"></iframe>
+</div>
+
+</div>
+
+
+<footer class="endsection footer">
+<div class="text-center " >
+<p style="position:relative;top:20px" class="text-white">Agira Technologies &copy 2020</br>
+<a href="#" >Terms and conditions</a></p>
+</div>
+</footer> 
+
+
+	<script>
+	
+	function makeUpdates(){
+	$("iframe").contents().find("html").html("<html><head><style>" + $("#csstext").val() + "</style></head><body>" + $("#htmltext").val() + "</body></html>");
+	document.getElementById("outputframe").contentWindow.eval($("#javascripttext").val());
+	}
+	
+	$("#htmlbutton").click(function(){
+	
+		$("#htmltext").removeClass("inactive") && $("#htmltext").addClass("active");
+		
+		$("#csstext").removeClass("active") && $("#csstext").addClass("inactive");
+		
+		$("#javascripttext").removeClass("active") && $("#javascripttext").addClass("inactive");
+		
+		$("#htmlbutton").removeClass("inactivebtn") && $("#htmlbutton").addClass("activebtn");
+		
+		$("#cssbutton").removeClass("activebtn") && $("#cssbutton").addClass("inactivebtn");
+		
+		$("#javascriptbutton").removeClass("activebtn") && $("#javascriptbutton").addClass("inactivebtn");
+		
+	});
+	
+	$("#cssbutton").click(function(){
+	
+		$("#csstext").removeClass("inactive") && $("#csstext").addClass("active");
+		
+		$("#htmltext").removeClass("active") && $("#htmltext").addClass("inactive");
+		
+		$("#javascripttext").removeClass("active") && $("#javascripttext").addClass("inactive");
+		
+		$("#cssbutton").removeClass("inactivebtn") && $("#cssbutton").addClass("activebtn");
+		
+		$("#javascriptbutton").removeClass("activebtn") && $("#javascriptbutton").addClass("inactivebtn");
+		
+		$("#htmlbutton").removeClass("activebtn") && $("#htmlbutton").addClass("inactivebtn");
+		
+	});
+	
+	$("#javascriptbutton").click(function(){
+	
+		$("#javascripttext").removeClass("inactive") && $("#javascripttext").addClass("active");
+		
+		$("#htmltext").removeClass("active") && $("#htmltext").addClass("inactive");
+		
+		$("#csstext").removeClass("active") && $("#csstext").addClass("inactive");
+		
+		$("#javascriptbutton").removeClass("inactivebtn") && $("#javascriptbutton").addClass("activebtn");
+		
+		$("#cssbutton").removeClass("activebtn") && $("#cssbutton").addClass("inactivebtn");
+		
+		$("#htmlbutton").removeClass("activebtn") && $("#htmlbutton").addClass("inactivebtn");
+		
+	});
+	
+	makeUpdates();
+	
+	$("textarea").on('change keyup paste', function(){
+	
+	/*$("iframe").contents().find("html").html($("#htmltext").val());*/
+	makeUpdates();
+	
+	});
+	
+	$(document).ready(function() {
+    $("#subtopicsid").scrollTop(300);
+	});
+	
+	</script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
