@@ -1,0 +1,236 @@
+@media only screen and (min-width: 1023px) { 
+    .brandarea{
+      display:flex;
+      flex-direction:row;
+      justify-content:center
+      }
+      .brandname{
+      display:flex;
+      flex-direction:column;
+      }
+      .logo{
+    
+      margin-top:20px;
+      margin-right:20px;
+      border-top-left-radius: 45px;
+      border-bottom-left-radius: 55px;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      }
+      .verytop{
+        height:150px;
+        font-family:proza;
+        background-color:#FFFFF0
+        }
+        .notessec{
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top:40px
+           
+        }
+        .fileicon{
+    
+            height:40px;
+            width:40px
+        }
+        btn{
+            background-color: #FFFFFF;
+        }
+        .endsection{
+      height:70px;
+      background-color:#FFFFF0;
+      margin-top:40px
+        }
+      .btns{
+        display:flex;flex-direction:row
+      }
+      
+      .div1{
+        margin:5px 35px 0 35px
+      }
+    
+      .div2{
+        margin:5px 35px 0 35px
+        }
+    
+        .div3{
+            margin:5px 65px 0 65px
+        }
+    
+        .div4{
+            margin:5px 60px 0 60px
+        }
+    
+        .div5{
+            margin:5px 72px 0 72px
+        }
+    
+        .div6{
+            margin:5px 58px 0 58px
+        }
+    
+        .div7{
+            margin:5px 58px 0 58px
+        }
+    
+        .div8{
+            margin:5px 58px 0 58px
+        }
+    
+        .div9{
+            margin:5px 58px 0 58px
+        }
+    
+        .div10{
+            margin:5px 58px 0 58px
+        }
+    
+       .div11{
+            margin:5px 58px 0 58px
+        }
+    
+        .div12{
+            margin:5px 15px 0 15px
+        }
+        .openbtn{
+            margin:0 0 0 15px
+        }
+        .b1{
+            margin-top:40px;font-weight:bold
+        }
+     
+     } 
+     @media only screen and (max-width: 700px) {
+        .brandarea{
+        display:flex;
+        flex-direction:row;
+        justify-content:center
+        }
+        .brandname{
+        display:flex;
+        flex-direction:column;
+        text-align:center;
+        
+        }
+        .logo{
+        height:90px;
+        width:120px;
+        margin-top:30px;
+        margin-right:10px;
+        margin-left:20px;
+        border-top-left-radius: 28px;
+      border-bottom-left-radius: 28px;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      }
+      .verytop{
+        height:150px;
+        font-family:proza;
+        background-color:#FFFFF0
+        }
+        .notessec{
+            text-align: center;
+            margin-top:30px
+        }
+        .downloadbtn{
+           
+          
+            
+        }
+        .btns{
+            display:flex;
+           flex-direction:row;
+           justify-content:center;
+           margin-top:20px
+        }
+        .openbtn{
+    
+            margin-left:15px 
+        }
+        .fileicon{
+    
+            height:40px;
+            width:40px;
+            margin-right:5px
+        }
+        btn{
+            background-color: #FFFFFF;
+           
+        }
+        .endsection{
+      height:70px;
+      background-color:#FFFFF0;
+      margin-top:40px
+      
+      }
+      .b1{
+            margin-top:30px;font-weight:bold;font-size:25px
+        }
+     } 
+     @media only screen and (min-width: 700px) and  (max-width: 1023px) {
+        .brandarea{
+        display:flex;
+        flex-direction:row;
+        justify-content:center
+        }
+        .brandname{
+        display:flex;
+        flex-direction:column;
+        text-align:center;
+       
+        
+        
+        }
+        .logo{
+        
+        margin-top:25px;
+        margin-right:20px;
+        border-top-left-radius: 28px;
+      border-bottom-left-radius: 28px;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      }
+      .verytop{
+        height:150px;
+        font-family:proza;
+        background-color:#FFFFF0
+        }
+        .notessec{
+            text-align: center;
+            margin-top:30px
+        }
+        .downloadbtn{
+           
+          
+            
+        }
+        .btns{
+            display:flex;
+           flex-direction:row;
+           justify-content:center;
+           margin-top:20px
+        }
+        .openbtn{
+    
+            margin-left:15px 
+        }
+        .fileicon{
+    
+            height:40px;
+            width:40px
+        }
+        btn{
+            background-color: #FFFFFF;
+           
+        }
+        .endsection{
+      height:70px;
+      background-color:#FFFFF0;
+      margin-top:40px
+      
+      }
+      .b1{
+            margin-top:40px;font-weight:bold
+        }
+     } 
