@@ -92,10 +92,35 @@
 	background-color:#555157;
 	margin-top:40px
 	}
-	li{
-	position:relative;
-	top:60px
-	}
+	.card-body {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 1.5rem;
+	height: 100%;
+}
+.card-title-section {
+	padding-top: 0.5rem;
+}
+.content-section {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 1rem 0;
+}
+.card-body ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.card-body li {
+	margin-bottom: 1rem;
+}
+.btn-container {
+	padding: 1rem 0 0.5rem;
+}
 	.calltoactbtn{
 	background-color:#DAAF1D;
 	border:none;
@@ -108,21 +133,10 @@
 	border:1px solid #DAAF1D;
 	transition:background-color 700ms ;
 	}
-	.calltoactbtndiv{
+	.calltoactbtndiv, .calltoactbtndiv1, .calltoactbtndiv2, .calltoactbtndiv3{
 	position:relative;
-	top:140px
-	}
-	.calltoactbtndiv1{
-	position:relative;
-	top:160px
-	}
-	.calltoactbtndiv2{
-	position:relative;
-	top:120px
-	}
-	.calltoactbtndiv3{
-	position:relative;
-	top:115px
+	margin-top: 20px;
+	margin-bottom: 20px;
 	}
 	.nav-item{
 	margin-right:20px;
@@ -168,6 +182,18 @@
 
 }
 @media only screen and (max-width: 768px) {
+	.calltoactbtndiv, .calltoactbtndiv1, .calltoactbtndiv2, .calltoactbtndiv3{
+		margin-top: 15px;
+		margin-bottom: 15px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 10px;
+	}
+	.calltoactbtn {
+		width: 80%;
+		margin: 0 !important;
+	}
 
 	.jumbotron{
 	height:330px;
@@ -432,15 +458,21 @@
     <div class="shapesdiv"><img src="bronzetriangle.PNG" class="card-img" alt="..."></div>
     </div>
     <div class="col-md-8">
-      <div class="card-body text-center" id="tobeblured1">
-        <h5 class="card-title ">Bronze Package</h5>
-       
-   <p class="card-text"><li>KSH 14,999</li></p>
-   <p class="card-text"><li>Ideal for personal blogs<!-- and very small businesses--></li></p>
-   <p class="card-text"><li>Package includes a simple but elegant website with a maximum of 1 web page</li></p>
-  
- <div class="calltoactbtndiv"> <button type="button" class="btn btn-secondary calltoactbtn" style="margin-right:15px" id="bronzebutton">Order now</button>
-  <a href="tel:07117544449"><button type="button" class="btn btn-secondary calltoactbtn">Call to order</button></a></div>
+      <div class="card-body" id="tobeblured1">
+        <div class="card-title-section">
+          <h5 class="card-title">Bronze Package</h5>
+        </div>
+        <div class="content-section">
+          <ul>
+            <li class="card-text">KSH 14,999</li>
+            <li class="card-text">Ideal for personal blogs<!-- and very small businesses--></li>
+            <li class="card-text">Package includes a simple but elegant website with a maximum of 1 web page</li>
+          </ul>
+        </div>
+        <div class="btn-container">
+          <button type="button" class="btn btn-secondary calltoactbtn" style="margin-right:15px" id="bronzebutton">Order now</button>
+          <a href="tel:07117544449"><button type="button" class="btn btn-secondary calltoactbtn">Call to order</button></a>
+        </div>
   
       </div>
 	  
@@ -476,15 +508,21 @@
 	  
     </div>
     <div class="col-md-8">
-      <div class="card-body text-center" id="tobeblured2">
-        <h5 class="card-title ">Silver Package (On offer!!)</h5>
-        
-	      <p class="card-text"><li>KSH <strike>42,999</strike> 39,999<!-- + free domain and hosting--></li></p>
-	<p class="card-text"><li>Ideal for standard businesses,companies,schools etc</li></p>
-	<p class="card-text"><li>Package includes an elegant website with a maximum of 8 web pages.</li></p>
-	
-	 <div class="calltoactbtndiv1"> <button type="button" class="btn btn-secondary calltoactbtn" style="margin-right:15px" id="silverbutton">Order now</button>
-  <a href="tel:07117544449"><button type="button" class="btn btn-secondary calltoactbtn">Call to order</button></a></div>
+      <div class="card-body" id="tobeblured2">
+        <div class="card-title-section">
+          <h5 class="card-title">Silver Package (On offer!!)</h5>
+        </div>
+        <div class="content-section">
+          <ul>
+            <li class="card-text">KSH <strike>42,999</strike> 39,999<!-- + free domain and hosting--></li>
+            <li class="card-text">Ideal for standard businesses,companies,schools etc</li>
+            <li class="card-text">Package includes an elegant website with a maximum of 8 web pages.</li>
+          </ul>
+        </div>
+        <div class="btn-container">
+          <button type="button" class="btn btn-secondary calltoactbtn" style="margin-right:15px" id="silverbutton">Order now</button>
+          <a href="tel:07117544449"><button type="button" class="btn btn-secondary calltoactbtn">Call to order</button></a>
+        </div>
 	
     </div>
 	
@@ -519,16 +557,21 @@
      <div class="shapesdiv"> <img src="goldpentagon.PNG" class="card-img" alt="..."></div>
     </div>
     <div class="col-md-8">
-      <div class="card-body text-center" id="tobeblured">
-        <h5 class="card-title ">Gold Package</h5>
-       
-    <p class="card-text"><li>KSH 79,999</li></p>
-	<p class="card-text"><li>Ideal for fully professional online based businesses</li></p>
-	<p class="card-text"><li>The Gold Package delivers a fully customized, database-driven website with advanced features including secure e-commerce functionality, user account management with role-based login privileges, seamless payment integration, real-time order tracking, and a professional shopping cart system. It also includes up to 20 tailored web pages, mobile-responsive design, and scalable architecture to support future growth.
-  </li></li></p>
-
-	<div class="calltoactbtndiv2"> <button type="button" class="btn btn-secondary calltoactbtn" style="margin-right:15px" id="goldbutton">Order now</button>
-  <a href="tel:07117544449"><button type="button" class="btn btn-secondary calltoactbtn">Call to order</button></a></div>
+      <div class="card-body" id="tobeblured">
+        <div class="card-title-section">
+          <h5 class="card-title">Gold Package</h5>
+        </div>
+        <div class="content-section">
+          <ul>
+            <li class="card-text">KSH 79,999</li>
+            <li class="card-text">Ideal for fully professional online based businesses</li>
+            <li class="card-text">The Gold Package delivers a fully customized, database-driven website with advanced features including secure e-commerce functionality, user account management with role-based login privileges, seamless payment integration, real-time order tracking, and a professional shopping cart system. It also includes up to 20 tailored web pages, mobile-responsive design, and scalable architecture to support future growth.</li>
+          </ul>
+        </div>
+        <div class="btn-container">
+          <button type="button" class="btn btn-secondary calltoactbtn" style="margin-right:15px" id="goldbutton">Order now</button>
+          <a href="tel:07117544449"><button type="button" class="btn btn-secondary calltoactbtn">Call to order</button></a>
+        </div>
 
       </div>
 	  
@@ -563,15 +606,21 @@
      <div class="shapesdiv"> <img src="platinumoctagon.PNG" class="card-img " alt="..."></div>
     </div>
     <div class="col-md-8">
-      <div class="card-body text-center" id="tobeblured4">
-        <h5 class="card-title ">Platinum Package</h5>
-      
-   <p class="card-text"><li>KSH 179,999</li></p>
-   <p class="card-text"><li>Ideal for exceptional businesses </li></p>
-   <p class="card-text"><li>The Platinum Package offers a high-performance, fully customized website with interactive and dynamic content. It includes advanced product configurators that allow customers to build and personalize their own products before placing orders, seamless e-commerce integration with secure payments, and engaging animations to enhance user experience. Built for speed, scalability, and innovation, this package is ideal for businesses seeking a top-tier digital presence.</li></p>
-  
-   <div class="calltoactbtndiv3"> <button type="button" class="btn btn-secondary calltoactbtn" style="margin-right:15px" id="platinumbutton">Order now</button>
-  <a href="tel:07117544449"><button type="button" class="btn btn-secondary calltoactbtn">Call to order</button></a></div>
+      <div class="card-body" id="tobeblured4">
+        <div class="card-title-section">
+          <h5 class="card-title">Platinum Package</h5>
+        </div>
+        <div class="content-section">
+          <ul>
+            <li class="card-text">KSH 179,999</li>
+            <li class="card-text">Ideal for exceptional businesses</li>
+            <li class="card-text">The Platinum Package offers a high-performance, fully customized website with interactive and dynamic content. It includes advanced product configurators that allow customers to build and personalize their own products before placing orders, seamless e-commerce integration with secure payments, and engaging animations to enhance user experience. Built for speed, scalability, and innovation, this package is ideal for businesses seeking a top-tier digital presence.</li>
+          </ul>
+        </div>
+        <div class="btn-container">
+          <button type="button" class="btn btn-secondary calltoactbtn" style="margin-right:15px" id="platinumbutton">Order now</button>
+          <a href="tel:07117544449"><button type="button" class="btn btn-secondary calltoactbtn">Call to order</button></a>
+        </div>
       </div>
 	  
 	 <div class="inactive orderform" id="orderplatinum">

@@ -109,10 +109,32 @@
 	min-height:400px;
 	height: auto
 	}
-	li{
-	position:relative;
-	top:10px
-	}
+	.card-body {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 1.5rem;
+	height: 100%;
+}
+.card-title-section {
+	padding-top: 0.5rem;
+}
+.content-section {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 1rem 0;
+}
+.card-body ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.card-body li {
+	margin-bottom: 1rem;
+}
 	.calltoactbtn{
 	background-color:#DAAF1D;
 	border:none;
@@ -150,12 +172,46 @@
 	}
 	.calltoactbtndiv{
 	position:relative;
-	top:40px
+	margin-top: 20px;
+	margin-bottom: 20px;
 	}
 
 }
 
 @media only screen and (max-width: 768px) {
+	.card-body {
+		padding: 1rem;
+	}
+	.content-section {
+		padding: 0.5rem 0;
+	}
+	.card-body li {
+		margin-bottom: 0.5rem;
+		font-size: 0.9rem;
+	}
+	.btn-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 10px;
+		padding: 0.5rem 0;
+	}
+	.btn-container button {
+		width: 80%;
+		margin: 0 !important;
+	}
+	.calltoactbtndiv {
+		margin-top: 15px;
+		margin-bottom: 15px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 10px;
+	}
+	.calltoactbtn {
+		width: 80%;
+		margin: 0 !important;
+	}
 
 	.jumbotron{
 	height:330px;
@@ -460,18 +516,24 @@ for you, thankyou for being part of the agira team and for your continued suppor
     <div class="shapesdiv"><img src="bronzetriangle.PNG" class="card-img" alt="..."></div>
     </div>
     <div class="col-md-8">
-      <div class="card-body text-center" id="tobeblured1">
-        <h5 class="card-title ">Bronze Hosting Package</h5>
-       
-   <p class="card-text"><li>KSH 2000</li></p>
-   <p class="card-text"><li>Host 1 website</li></p>
-   <p class="card-text"><li>unlimited subdomains</li></p>
-   <p class="card-text"><li>upto 10 email accounts</li></p>
-   <p class="card-text"><li>Daily website backup</li></p>
-   <p class="card-text"><li>Agira hosting support</li></p>
-  
- <div class="calltoactbtndiv"> <button type="button" class="btn btn-secondary calltoactbtn" style="margin-right:15px" id="bronzebutton">Order now</button>
-  <a href="tel:07117544449"><button type="button" class="btn btn-secondary calltoactbtn">Call to order</button></a></div>
+      <div class="card-body" id="tobeblured1">
+        <div class="card-title-section">
+          <h5 class="card-title">Bronze Hosting Package</h5>
+        </div>
+        <div class="content-section">
+          <ul>
+            <li class="card-text">KSH 2000</li>
+            <li class="card-text">Host 1 website</li>
+            <li class="card-text">unlimited subdomains</li>
+            <li class="card-text">upto 10 email accounts</li>
+            <li class="card-text">Daily website backup</li>
+            <li class="card-text">Agira hosting support</li>
+          </ul>
+        </div>
+        <div class="btn-container">
+          <button type="button" class="btn btn-secondary calltoactbtn" style="margin-right:15px" id="bronzebutton">Order now</button>
+          <a href="tel:07117544449"><button type="button" class="btn btn-secondary calltoactbtn">Call to order</button></a>
+        </div>
   
       </div>
 	  
@@ -519,18 +581,24 @@ for you, thankyou for being part of the agira team and for your continued suppor
 	  
     </div>
     <div class="col-md-8">
-      <div class="card-body text-center" id="tobeblured2">
-        <h5 class="card-title ">Silver Hosting Package</h5>
-        
-    <p class="card-text"><li>KSH 3500</li></p>
-   <p class="card-text"><li>Host upto 3 websites</li></p>
-   <p class="card-text"><li>unlimited subdomains</li></p>
-   <p class="card-text"><li>upto 30 email accounts</li></p>
-   <p class="card-text"><li>Daily website backup</li></p>
-   <p class="card-text"><li>Agira hosting support</li></p>
-	
-	 <div class="calltoactbtndiv"> <button type="button" class="btn btn-secondary calltoactbtn" style="margin-right:15px" id="silverbutton">Order now</button>
-  <a href="tel:07117544449"><button type="button" class="btn btn-secondary calltoactbtn">Call to order</button></a></div>
+      <div class="card-body" id="tobeblured2">
+        <div class="card-title-section">
+          <h5 class="card-title">Silver Hosting Package</h5>
+        </div>
+        <div class="content-section">
+          <ul>
+            <li class="card-text">KSH 3500</li>
+            <li class="card-text">Host upto 3 websites</li>
+            <li class="card-text">unlimited subdomains</li>
+            <li class="card-text">upto 30 email accounts</li>
+            <li class="card-text">Daily website backup</li>
+            <li class="card-text">Agira hosting support</li>
+          </ul>
+        </div>
+        <div class="btn-container">
+          <button type="button" class="btn btn-secondary calltoactbtn" style="margin-right:15px" id="silverbutton">Order now</button>
+          <a href="tel:07117544449"><button type="button" class="btn btn-secondary calltoactbtn">Call to order</button></a>
+        </div>
 	
     </div>
 	
@@ -565,18 +633,24 @@ for you, thankyou for being part of the agira team and for your continued suppor
      <div class="shapesdiv"> <img src="goldpentagon.PNG" class="card-img" alt="..."></div>
     </div>
     <div class="col-md-8">
-      <div class="card-body text-center" id="tobeblured">
-        <h5 class="card-title ">Gold Hosting Package</h5>
-       
-     <p class="card-text"><li>KSH 6500</li></p>
-   <p class="card-text"><li>Host upto 10 websites</li></p>
-   <p class="card-text"><li>unlimited subdomains</li></p>
-   <p class="card-text"><li>upto 100 email accounts</li></p>
-   <p class="card-text"><li>Daily website backup</li></p>
-   <p class="card-text"><li>Agira hosting support</li></p>
-
-	<div class="calltoactbtndiv"> <button type="button" class="btn btn-secondary calltoactbtn" style="margin-right:15px" id="goldbutton">Order now</button>
-  <a href="tel:07117544449"><button type="button" class="btn btn-secondary calltoactbtn">Call to order</button></a></div>
+      <div class="card-body" id="tobeblured">
+        <div class="card-title-section">
+          <h5 class="card-title">Gold Hosting Package</h5>
+        </div>
+        <div class="content-section">
+          <ul>
+            <li class="card-text">KSH 6500</li>
+            <li class="card-text">Host upto 10 websites</li>
+            <li class="card-text">unlimited subdomains</li>
+            <li class="card-text">upto 100 email accounts</li>
+            <li class="card-text">Daily website backup</li>
+            <li class="card-text">Agira hosting support</li>
+          </ul>
+        </div>
+        <div class="btn-container">
+          <button type="button" class="btn btn-secondary calltoactbtn" style="margin-right:15px" id="goldbutton">Order now</button>
+          <a href="tel:07117544449"><button type="button" class="btn btn-secondary calltoactbtn">Call to order</button></a>
+        </div>
 
       </div>
 	  
